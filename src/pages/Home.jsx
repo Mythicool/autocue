@@ -56,10 +56,8 @@ const Home = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {/* Quality Guarantee */}
                         <div className="card text-center group hover:border-electric-500">
-                            <div className="w-16 h-16 mx-auto mb-4 bg-electric-500/20 rounded-full flex items-center justify-center group-hover:bg-electric-500 transition-all duration-300">
-                                <svg className="w-8 h-8 text-electric-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                            <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                                <img src="/images/certifiedoremium.png" alt="Quality Guaranteed" className="w-full h-full object-contain" />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-2">Quality Guaranteed</h3>
                             <p className="text-gray-400">Every vehicle undergoes thorough inspection and comes with a detailed service history.</p>
@@ -67,10 +65,8 @@ const Home = () => {
 
                         {/* Honest Pricing */}
                         <div className="card text-center group hover:border-gold-500">
-                            <div className="w-16 h-16 mx-auto mb-4 bg-gold-500/20 rounded-full flex items-center justify-center group-hover:bg-gold-500 transition-all duration-300">
-                                <svg className="w-8 h-8 text-gold-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                            <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                                <img src="/images/dollarsign.png" alt="Fair Prices" className="w-full h-full object-contain" />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-2">Fair Prices</h3>
                             <p className="text-gray-400">Transparent pricing with no hidden fees. We believe in honest deals that work for everyone.</p>
@@ -78,10 +74,8 @@ const Home = () => {
 
                         {/* Financing Options */}
                         <div className="card text-center group hover:border-electric-500">
-                            <div className="w-16 h-16 mx-auto mb-4 bg-electric-500/20 rounded-full flex items-center justify-center group-hover:bg-electric-500 transition-all duration-300">
-                                <svg className="w-8 h-8 text-electric-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                                </svg>
+                            <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                                <img src="/images/handshake.png" alt="Flexible Financing" className="w-full h-full object-contain" />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-2">Flexible Financing</h3>
                             <p className="text-gray-400">Multiple financing options available to fit your budget. We work with all credit types.</p>
@@ -89,11 +83,8 @@ const Home = () => {
 
                         {/* Local Business */}
                         <div className="card text-center group hover:border-gold-500">
-                            <div className="w-16 h-16 mx-auto mb-4 bg-gold-500/20 rounded-full flex items-center justify-center group-hover:bg-gold-500 transition-all duration-300">
-                                <svg className="w-8 h-8 text-gold-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
+                            <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                                <img src="/images/route66.png" alt="Oklahoma Local" className="w-full h-full object-contain" />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-2">Oklahoma Local</h3>
                             <p className="text-gray-400">Family-owned business serving OKC for 9+ years. Your neighbors, your dealership.</p>
