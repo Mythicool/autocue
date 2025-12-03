@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy-900: #0A1628;
+  --navy-800: #0F1F3A;
+  --navy-700: #1E293B;
+  --electric-500: #0EA5E9;
+  --electric-600: #0284C7;
+  --electric-400: #38BDF8;
+  --gold-500: #F59E0B;
+  --gold-600: #D97706;
+  --gold-400: #FBBF24;
+}
+
+@layer base {
+  body {
+    @apply bg-navy-900 text-gray-100 font-inter;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-outfit font-bold;
+  }
+}
+
+@layer components {
+
+  /* Glassmorphism Effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-dark {
+    background: rgba(10, 22, 40, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Premium Gradient Background */
+  .premium-gradient {
+    background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 50%, var(--navy-700) 100%);
+  }
+
+  /* Electric Gradient */
+  .electric-gradient {
+    background: linear-gradient(135deg, var(--electric-600) 0%, var(--electric-500) 50%, var(--electric-400) 100%);
+  }
+
+  /* Gold Accent Gradient */
+  .gold-gradient {
+    background: linear-gradient(135deg, var(--gold-600) 0%, var(--gold-500) 50%, var(--gold-400) 100%);
+  }
+
+  /* Button Styles */
+  .btn-primary {
+    @apply bg-electric-500 hover:bg-electric-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-electric-500/50;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-electric-500 text-electric-500 hover:bg-electric-500 hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300;
+  }
+
+  .btn-gold {
+    @apply bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-gold-500/50;
+  }
+
+  /* Card Styles */
+  .card {
+    @apply glass-dark rounded-xl p-6 transition-all duration-300 hover:shadow-xl;
+  }
+
+  .card-hover {
+    @apply card hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-electric-500/20;
+  }
+
+  /* Input Styles */
+  .input {
+    @apply w-full px-4 py-3 bg-navy-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-electric-500 focus:border-transparent transition-all duration-300;
+  }
+
+  .textarea {
+    @apply input resize-none;
+  }
+
+  /* Section Padding */
+  .section {
+    @apply py-20 px-4 md:px-8;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Shimmer Effect */
+  .shimmer {
+    background: linear-gradient(to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%);
+    background-size: 1000px 100%;
+    animation: shimmer 2s linear infinite;
+  }
+
+  /* Focus States for Accessibility */
+  .focus-outline {
+    @apply focus:outline-none focus:ring-2 focus:ring-electric-500 focus:ring-offset-2 focus:ring-offset-navy-900;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, var(--electric-400), var(--gold-500));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-gradient {
+    border-image: linear-gradient(135deg, var(--electric-500), var(--gold-500)) 1;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--navy-900);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--electric-500);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--electric-600);
+}
+
+/* Loading Animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  animation: spin 1s linear infinite;
+}

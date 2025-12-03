@@ -1,0 +1,88 @@
+// Customer testimonials data
+export const testimonialsData = [
+    {
+        id: 1,
+        name: 'Sarah Johnson',
+        location: 'Oklahoma City, OK',
+        rating: 5,
+        image: 'https://i.pravatar.cc/150?img=5',
+        date: '2024-11-15',
+        vehiclePurchased: '2022 Toyota Camry',
+        review: 'Absolutely fantastic experience at AutoCue! The team was professional, honest, and helped me find the perfect car within my budget. No pressure tactics, just genuine help. Highly recommend!',
+    },
+    {
+        id: 2,
+        name: 'Michael Torres',
+        location: 'Norman, OK',
+        rating: 5,
+        image: 'https://i.pravatar.cc/150?img=12',
+        date: '2024-10-28',
+        vehiclePurchased: '2021 Honda Accord',
+        review: 'Best car buying experience I\'ve ever had. They were transparent about pricing, the financing process was smooth, and my Accord runs like a dream. These folks really care about their customers!',
+    },
+    {
+        id: 3,
+        name: 'Emily Chen',
+        location: 'Edmond, OK',
+        rating: 5,
+        image: 'https://i.pravatar.cc/150?img=9',
+        date: '2024-11-02',
+        vehiclePurchased: '2022 Mazda CX-5',
+        review: 'As a first-time car buyer, I was nervous, but the AutoCue team made everything so easy. They explained every step and answered all my questions. Love my new CX-5!',
+    },
+    {
+        id: 4,
+        name: 'Robert Davis',
+        location: 'Moore, OK',
+        rating: 5,
+        image: 'https://i.pravatar.cc/150?img=15',
+        date: '2024-09-20',
+        vehiclePurchased: '2020 Ford F-150',
+        review: 'Bought my F-150 here and couldn\'t be happier. Fair price, great selection, and they even helped me get approved for financing with my less-than-perfect credit. True professionals!',
+    },
+    {
+        id: 5,
+        name: 'Jessica Martinez',
+        location: 'Yukon, OK',
+        rating: 5,
+        image: 'https://i.pravatar.cc/150?img=24',
+        date: '2024-10-10',
+        vehiclePurchased: '2021 Nissan Rogue',
+        review: 'The staff at AutoCue went above and beyond. They found exactly what I was looking for, and the trade-in value they gave me for my old car was more than fair. Will definitely be back!',
+    },
+    {
+        id: 6,
+        name: 'David Thompson',
+        location: 'Oklahoma City, OK',
+        rating: 5,
+        image: 'https://i.pravatar.cc/150?img=33',
+        date: '2024-11-08',
+        vehiclePurchased: '2020 Jeep Grand Cherokee',
+        review: 'Outstanding service from start to finish. No hidden fees, clear communication, and they delivered on everything they promised. My Grand Cherokee is perfect for my family. Thank you, AutoCue!',
+    },
+    {
+        id: 7,
+        name: 'Amanda Rodriguez',
+        location: 'Midwest City, OK',
+        rating: 5,
+        image: 'https://i.pravatar.cc/150?img=20',
+        date: '2024-09-15',
+        vehiclePurchased: '2022 Kia Forte',
+        review: 'Friendly, knowledgeable staff who really listen to what you need. They worked with my budget and found me a fantastic car. Best dealership in OKC by far!',
+    },
+    {
+        id: 8,
+        name: 'Christopher Lee',
+        location: 'Del City, OK',
+        rating: 5,
+        image: 'https://i.pravatar.cc/150?img=8',
+        date: '2024-10-05',
+        vehiclePurchased: '2021 Subaru Outback',
+        review: 'Trustworthy and reliable. That\'s AutoCue in a nutshell. They helped me get into my dream Outback without breaking the bank. Couldn\'t ask for a better experience!',
+    },
+];
+
+export const getAverageRating = () => {
+    const sum = testimonialsData.reduce((acc, testimony) => acc + testimony.rating, 0);
+    return (sum / testimonialsData.length).toFixed(1);
+};
